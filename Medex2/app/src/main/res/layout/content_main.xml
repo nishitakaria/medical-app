@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.hp.medex.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/LightBlue"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/ambulance"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/sos"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:src="@drawable/ambulance1"
+            android:clickable="true"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/sos"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/firstaid"
+            android:layout_alignStart="@+id/firstaid"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="36dp"
+            android:src="@drawable/sos1"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/firstaid"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/firstaid"
+            android:text="@string/app_name"
+            android:clickable="true"/>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignLeft="@+id/ambulance"
+            android:layout_alignStart="@+id/ambulance"
+            android:layout_alignTop="@+id/firstaid"
+            android:src="@drawable/location1"
+            android:text="@string/app_name"
+            android:clickable="true" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textambulance"
+            android:layout_toStartOf="@+id/textambulance"
+            android:src="@drawable/panic"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/textfirstaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/firstaid"
+            android:layout_alignStart="@+id/firstaid"
+            android:layout_below="@+id/firstaid"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:text="First Aid" />
+
+        <TextView
+            android:id="@+id/textlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textfirstaid"
+            android:layout_alignBottom="@+id/textfirstaid"
+            android:layout_alignEnd="@+id/location"
+            android:layout_alignRight="@+id/location"
+            android:text="Nearby Hospitals" />
+
+        <TextView
+            android:id="@+id/textsos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/sos"
+            android:layout_alignStart="@+id/sos"
+            android:layout_below="@+id/sos"
+            android:text="Emergency Number"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/textambulance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ambulance"
+            android:layout_alignRight="@+id/ambulance"
+            android:layout_below="@+id/ambulance"
+            android:text="Ambulance Booking"
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="507dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
